@@ -8,6 +8,7 @@ namespace crm
         {
             Console.WriteLine("Hello World!");
             Console.ReadLine();
+            var test1 = 1;
         }
     }
 }

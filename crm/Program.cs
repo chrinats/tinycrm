@@ -3,7 +3,6 @@ using System.IO;
 using System.Text;
 using System.Collections.Generic;
 
-
 namespace crm
 {
     class Program
@@ -65,8 +64,6 @@ namespace crm
                 }
             }
             return true;
-
-
         }
     }
 

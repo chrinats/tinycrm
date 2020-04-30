@@ -7,16 +7,16 @@ namespace crm
     class Customer
     {
 
-       public DateTime Created { get; private set; }
+        public DateTime Created { get; private set; }
 
-       public string Firstname { get; set; }
-       public string LastName { get; set; }
-       public string Email { get; set; }
-       public string VatNumber { get; private set; }
-       public string Mobile { get; set; }
-       public decimal TotalGross { get; private set; }
-       public bool IsActive { get; set; }
-       
+        public string Firstname { get; set; }
+        public string LastName { get; set; }
+        public string Email { get; set; }
+        public string VatNumber { get; private set; }
+        public string Mobile { get; set; }
+        public decimal TotalGross { get; private set; }
+        public bool IsActive { get; set; }
+
 
         public Customer(string vatNumber)
         {
@@ -28,9 +28,9 @@ namespace crm
             Created = DateTime.Now;
         }
 
-      public bool IsValidVatumber(string vatNumber)
+        public bool IsValidVatumber(string vatNumber)
         {
-            return    
+            return
                 !string.IsNullOrWhiteSpace(vatNumber) && vatNumber.Length == 9;
         }
 

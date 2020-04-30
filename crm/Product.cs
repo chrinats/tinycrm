@@ -13,11 +13,11 @@ namespace crm
 
 
         public Product()
-        { 
+        {
             var value = string.Format("{0:0.##}", new Random().NextDouble() * 100);
             Price = value;
         }
 
-        
+
     }
 }
